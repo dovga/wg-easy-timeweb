@@ -40,7 +40,7 @@ RUN update-alternatives --install /usr/sbin/iptables iptables /usr/sbin/iptables
 
 # Set Environment
 ENV DEBUG=Server,WireGuard
-
+EXPOSE 51821
 # Run Web UI
 WORKDIR /app
 CMD ["/usr/bin/dumb-init", "node", "server.js"]
